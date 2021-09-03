@@ -23,7 +23,7 @@
       if($_GET['name']){
          echo $_GET['name'];
       }
-      
+
       # To resolve undefined Error
       if(isset($_GET['name'])){
            echo $_GET['name'];
@@ -37,4 +37,13 @@
 
       $name = isset($_GET['name'])? $_GET['name'] : NULL;
       echo $name;
+
+      # For Project Implementation
+      $name  = isset($_GET['name'])?  $_GET['name']  : NULL;
+      $email = isset($_GET['email'])? $_GET['email'] : NULL;
+      $phone = isset($_GET['phone'])? $_GET['phone'] : NULL;      
 ?>
+
+<p>Name  : <?php echo $name;  ?> </p>
+<p>Email : <?php echo $email; ?> </p>
+<p>Phone : <?php echo $phone; ?> </p>
